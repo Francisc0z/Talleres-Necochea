@@ -1,0 +1,159 @@
+.container-fluid .area-slider {
+  position: relative;
+  display: flex;
+  justify-content: center; }
+  .container-fluid .area-slider .slider-ctr {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 10px solid rgba(236, 2, 2, 0.8);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px 3px rgba(0, 0, 0, 0.15), 0 5px 20px 3px rgba(0, 0, 0, 0.1); }
+  .container-fluid .area-slider .slider-ctr:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.6) 100%);
+    background: -webkit-linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.6) 100%);
+    pointer-events: none;
+    z-index: 9; }
+  .container-fluid .area-slider .slider-control {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    width: 80px;
+    overflow: hidden;
+    border-radius: 3px;
+    box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.15);
+    z-index: 99; }
+  .container-fluid .area-slider .slider-control .control {
+    width: 50%;
+    height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: white; }
+  .container-fluid .area-slider .slider-control .control .icon {
+    pointer-events: none;
+    transition: 0.3s; }
+  .container-fluid .area-slider .slider-control .control.disabled {
+    pointer-events: none;
+    background: #ddd; }
+  .container-fluid .area-slider .slider-control .control.disabled .icon {
+    opacity: 0.5; }
+  .container-fluid .area-slider .slide {
+    position: absolute;
+    transition: 0.2s all cubic-bezier(0.65, 0.05, 0.36, 1);
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0); }
+  .container-fluid .area-slider .slide:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.125); }
+  .container-fluid .area-slider .slide.slide-on {
+    -webkit-clip-path: inset(0 100% 0 0);
+    clip-path: inset(0 100% 0 0); }
+  .container-fluid .area-slider .slide.text-on .author {
+    transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.2s;
+    -webkit-clip-path: inset(0 0 0 0);
+    clip-path: inset(0 0 0 0); }
+  .container-fluid .area-slider .slide img {
+    display: block;
+    width: 100%;
+    height: 100%; }
+  .container-fluid .area-slider .slide figcaption {
+    position: absolute;
+    top: 30px;
+    left: 30px; }
+  .container-fluid .area-slider .slide .title {
+    font-size: 50px;
+    margin-bottom: 2px;
+    color: white;
+    transition: 0.2s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.45s;
+    -webkit-clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
+    font-weight: 400;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    position: relative; }
+  .container-fluid .area-slider .slide .author {
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+    transition: 0.2s all cubic-bezier(0.65, 0.05, 0.36, 1) 0.45s;
+    -webkit-clip-path: inset(0 0 0 100%);
+    clip-path: inset(0 0 0 100%);
+    font-weight: 500;
+    letter-spacing: 3px;
+    position: relative;
+    z-index: 2; }
+.container-fluid .area-informacion {
+  height: 100%; }
+  .container-fluid .area-informacion a {
+    text-decoration: none;
+    color: red; }
+  .container-fluid .area-informacion b {
+    color: red; }
+  .container-fluid .area-informacion .servicio {
+    display: inline-flex;
+    padding: 5px;
+    margin: 2px;
+    background-color: red;
+    color: white; }
+
+.whatsapp .float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 1px 1px 2px black;
+  z-index: 100;
+  opacity: 0.6; }
+.whatsapp .float:hover {
+  opacity: 1; }
+.whatsapp .my-float {
+  margin-top: 16px; }
+
+@media (max-width: 1010px) {
+  .titulo {
+    margin-top: 1.2rem; }
+
+  .container-fluid .area-slider {
+    align-items: center; }
+    .container-fluid .area-slider .slider-ctr {
+      width: 400px;
+      height: 400px; } }
+@media (max-width: 768px) {
+  .container-fluid .area-slider {
+    min-height: 25rem; }
+  .container-fluid .area-informacion {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+@media (max-width: 400px) {
+  .container-fluid .area-slider .slider-ctr {
+    width: 350px;
+    height: 350px; } }
+@media (max-width: 350px) {
+  .container-fluid .area-slider .slider-ctr {
+    width: 300px;
+    height: 300px; } }
+
+/*# sourceMappingURL=tallerplantillas.css.map */
